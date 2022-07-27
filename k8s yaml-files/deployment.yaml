@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-dep
+  creationTimestamp: null
+  labels:
+    app: demo-dep
+  
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: demo-dep
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: demo-dep
+    spec:
+      containers:
+      - image: eu.gcr.io/iti-ezzat/myapp1:latest
+        name: demo
+        # imagePullPolicy: Never
+        ports:
+        - containerPort: 8000
+        env:
+        - name: REDIS_PORT
+          value: "6379"
+        resources: {}
+      restartPolicy: Always
+status: {}
