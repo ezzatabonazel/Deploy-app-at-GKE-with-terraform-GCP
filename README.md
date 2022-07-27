@@ -16,9 +16,9 @@ create kubrenetes yaml files and deploy app on GKE cluster
 - **GCP**: to define GKE cluster to deploy python application on it.
 - **Terraform**: provision GCP resources.
 
-# Steps to implement:
+# Steps to implement 
 
-## Build docker image and pull redis image 
+## Build docker image and pull redis image:
 
 ```bash
 $ docker build -t python-app .
@@ -47,7 +47,7 @@ $ docker push eu.gcr.io/<PROJECT-ID>/redis:latest
 
 ---
 
-## provision GCP infrastructure with Terraform
+## provision GCP infrastructure with Terraform :
 - You need to have an account and a project on GCP
 - Pass values for the variables defined in a file with the terraform.tfvars name as such:
 ```
@@ -86,7 +86,7 @@ $ terraform apply
 <img src="screenshots/Screenshot from 2022-07-27 19-38-35.png"/>
 
 
-## Connect to management vm and install gcloud, kubectl and connect on GKE cluster
+## Connect to management vm and install gcloud, kubectl and connect on GKE cluster :
 
 ```bash
 # ssh vm
@@ -113,7 +113,7 @@ $ kubectl create -f  ingress.yaml
 
 
 
-## copy ingress ip and go to your browser
+## copy ingress ip and go to your browser :
 
 <img src="screenshots/Screenshot from 2022-07-27 20-10-32.png"/>
 
