@@ -82,7 +82,9 @@ $ terraform apply
 
 ```
 > check GKE creation on GCP:
-![image](screenshots/Screenshot from 2022-07-27 19-38-35.png)
+
+<img src="screenshots/Screenshot from 2022-07-27 19-38-35.png"/>
+
 
 ## Connect to management vm and install gcloud, kubectl and connect on GKE cluster
 
@@ -92,7 +94,7 @@ $ gcloud compute ssh --zone <"us-central1-a"> "managment-vm"  --tunnel-through-i
  # connect cluster
 $ gcloud container clusters get-credentials my-gke-cluster --region <region> --project <project-id>
 ```
-![image](screenshots/Screenshot from 2022-07-27 19-55-58.png)
+<img src="screenshots/Screenshot from 2022-07-27 19-55-58.png"/>
 
 ## Copy demo-app k8s to the management instance and deploy the application:
 
@@ -107,11 +109,11 @@ $ kubectl create -f  redis.yaml
 $ kubectl create -f  redis-svc.yaml
 $ kubectl create -f  ingress.yaml
 ```
-![image](screenshots/Screenshot from 2022-07-27 20-09-58.png)
+<img src="screenshots/Screenshot from 2022-07-27 20-09-58.png"/>
 
 
 
 ## copy ingress ip and go to your browser
 
-![image](screenshots/Screenshot from 2022-07-27 20-10-32.png)
+<img src="screenshots/Screenshot from 2022-07-27 20-10-32.png"/>
 
