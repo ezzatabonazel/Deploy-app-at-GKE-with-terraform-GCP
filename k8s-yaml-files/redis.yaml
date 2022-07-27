@@ -7,7 +7,7 @@ metadata:
   name: redis-pod
 spec:
   containers:
-  - image: redis
+  - image: eu.gcr.io/iti-ezzat/redis:latest
     name: redis-pod
     resources: {}
   dnsPolicy: ClusterFirst

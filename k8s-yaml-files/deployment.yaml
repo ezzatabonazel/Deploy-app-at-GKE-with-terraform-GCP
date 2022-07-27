@@ -19,14 +19,11 @@ spec:
         app: demo-dep
     spec:
       containers:
-      - image: eu.gcr.io/iti-ezzat/myapp1:latest
+      - image: eu.gcr.io/iti-ezzat/python-app:latest
         name: demo
-        # imagePullPolicy: Never
         ports:
         - containerPort: 8000
         env:
         - name: REDIS_PORT
-          value: "6379"
+          value: 6379
         resources: {}
-      restartPolicy: Always
-status: {}
