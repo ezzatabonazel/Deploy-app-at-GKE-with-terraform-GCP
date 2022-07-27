@@ -7,7 +7,7 @@ create kubrenetes yaml files and deploy app on GKE cluster
 
 ## Architecture
 
-![image](screenshots/Screenshot from 2022-07-27 20-18-12.png)
+<img src="screenshots/Screenshot from 2022-07-27 20-18-12.png" alt="architecture"/>
 
 # Tools used:
 
