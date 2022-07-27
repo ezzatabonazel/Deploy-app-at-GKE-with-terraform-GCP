@@ -9,6 +9,6 @@
 - container clust
 - Node pool
 - Node Service Account
-### Compute Resurces:
+### Compute Resources:
 - Private instance 
 - instance Service Account
